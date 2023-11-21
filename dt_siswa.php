@@ -19,7 +19,8 @@ include("con_db/connection.php");
 </head>
 
 <body>
-<header class="tz-header tz-header-2">
+
+    <header class="tz-header tz-header-2">
         <div class="tz-sign-in">
             <div class="container">
                 <p>SELAMAT DATANG DI APLIKASI PPDB ONLINE SMA NEGERI 7 YOGYAKARTA</p>
@@ -43,7 +44,7 @@ include("con_db/connection.php");
     </header>
     <!-- End class tz-header-2 -->
 
-        <section class="tz-banner tz-banner-style2">
+    <section class="tz-banner tz-banner-style2">
         <!-- Begin class banner style-3 -->
         <div class="tz-banner-style2">
             <div class="tz-slider-banner">
@@ -234,26 +235,26 @@ include("con_db/connection.php");
                                                                 $thn = date("Y");
                                                                 echo "$thn"; ?> 
         </div>
-</footer>
-<!-- End Footer -->
+    </footer>
+    <!-- End Footer -->
  
-<script>
-    var Desktop = 5,
-        tabletportrait = 2,
-        mobilelandscape = 1,
-        mobileportrait = 1,
-        resizeTimer = null;
-</script>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/off-canvas.js"></script>
-<script src="js/jquery.isotope.min.js"></script>
-<script src="js/resize.js"></script>
-<script src="js/custom-portfolio.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.parallax-1.1.3.js"></script>
-<script src="js/custom.js"></script>
-
+    <script>
+        var Desktop = 5,
+            tabletportrait = 2,
+            mobilelandscape = 1,
+            mobileportrait = 1,
+            resizeTimer = null;
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/off-canvas.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/resize.js"></script>
+    <script src="js/custom-portfolio.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/custom.js"></script>
+    
 </body>
 
 </html>
