@@ -10,6 +10,12 @@ include("con_db/connection.php");
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CEK STATUS PENDAFTARAN ANDA - SMA NEGERI 7 YOGYAKARTA</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="fonts/awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href='css/owl.carousel.css' rel='stylesheet' type='text/css'>
+    <link href='css/owl.theme.css' rel='stylesheet' type='text/css'>
+    <link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -220,6 +226,7 @@ include("con_db/connection.php");
             </ul>
         </div>
     </section>
+
     <footer class="tz-footer">
 
         <div class="tz-footer-address-site">
@@ -229,7 +236,24 @@ include("con_db/connection.php");
         </div>
 </footer>
 <!-- End Footer -->
-                
+ 
+<script>
+    var Desktop = 5,
+        tabletportrait = 2,
+        mobilelandscape = 1,
+        mobileportrait = 1,
+        resizeTimer = null;
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/off-canvas.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/resize.js"></script>
+<script src="js/custom-portfolio.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.parallax-1.1.3.js"></script>
+<script src="js/custom.js"></script>
+
 </body>
 
 </html>
