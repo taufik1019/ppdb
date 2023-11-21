@@ -254,7 +254,6 @@ include("con_db/connection.php");
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.parallax-1.1.3.js"></script>
     <script src="js/custom.js"></script>
-    
 </body>
 
 </html>
