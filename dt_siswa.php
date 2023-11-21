@@ -35,9 +35,7 @@ include("con_db/connection.php");
                     <button type="button" class="tz-button-toggle btn-navbar pull-right" data-target=".nav-collapse">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <?php
-                    include("");
-                    ?>
+
                 </div>
             </div><!-- End Content Main Header -->
         </div>
@@ -69,9 +67,7 @@ include("con_db/connection.php");
     <!-- Begin section tz-introduce-univesity -->
     <section class="tz-introduce-univesity">
         <!-- Start class tzWrap -->
-        <?php
-        include("");
-        ?>
+
         <div class="tzWrap">
 
             <div class="container" id="fc">
@@ -162,10 +158,10 @@ include("con_db/connection.php");
                                     <a href="#">Error !! Maaf Nomor Pendaftaran Anda Tidak Ditemukan.</a>
                                 </div>
                         <?php
-                                include("");
+                                include("frm_dt_sis.php");
                             }
                         } else {
-                            include("");
+                            include("frm_dt_sis.php");
                         }
                         ?>
 
