@@ -196,14 +196,14 @@ include("con_db/connection.php");
                     <div class="tz-background-color-4" style="text-align: center">
                         <h3 style="color: white">PPDB ONLINE</h3>
                         <hr />
-                        <font color="white">Sistem Informasi Penerimaan Siswa Baru SMA NEGERI 7 YOGYAKARTA Merupakan sistem informasi berbasis web yang dibangun menggunakan Bahasa Pemrograman PHP database MySQL. Sedangkan Front End dari Sistem Informasi ini menggunakan PHP Native dan Bootstrap agar tampilan terlihat Menarik</font>
+                        <font color="white">Sistem Informasi Penerimaan Siswa Baru SMA Negeri 7 Yogyakarta Merupakan sistem informasi berbasis web yang dibangun menggunakan Bahasa Pemrograman PHP database MySQL. Sedangkan Front End dari Sistem Informasi ini menggunakan PHP Native dan Bootstrap agar tampilan terlihat Menarik</font>
                     </div>
                 </li>
                 <li>
                     <div class="tz-background-color-4" style="text-align: center">
                         <h3 style="color: white">MANFAAT</h3>
                         <hr style="border-color: #334878" />
-                        <font color="white">Dengan adanya Sistem Informasi PPDB Online di SMA NEGERI 7 YOGYAKARTA diharapkan dapat membantu Calon siswa untuk melakukan Pendaftaran Tanpa harus datang ke sekolah untuk melakukan pendaftaran, menghemat biaya dan Waktu.</font>
+                        <font color="white">Dengan adanya Sistem Informasi PPDB Online di SMA Negeri 7 Yogyakarta diharapkan dapat membantu Calon siswa untuk melakukan Pendaftaran Tanpa harus datang ke sekolah untuk melakukan pendaftaran, menghemat biaya dan Waktu.</font>
                     </div>
                 </li>
                 <li>
