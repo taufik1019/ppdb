@@ -49,7 +49,7 @@
             <div class="tz-slider-banner">
                 <div class="tz-items">
                     <div class="tz-slider-images">
-                        <img src="#" alt="Images">
+                        <img src="img/sekolah.jpeg" alt="Images">
                     </div>
                     <div class="tz-banner-content">
                         <div class="container">
@@ -103,6 +103,22 @@
    
     <section class="tz-introduce-univesity" style="width: 100%;background: #334878">
         <div class="tz-cource-services tz-cource-services-style-2">
+        <section class="tz-introduce-univesity">
+        <div class="tz-introduce-content" style="text-align: justify;">
+            <h1><b>SMA Negeri 7 YOGYAKARTA</b></h1>
+            Merupakan salah satu sekolah Negeri yang terletak di kawasan jantung kota Yogyakarta, tentu saja sekolah ini tidak akan kalah dengan sekolah-sekolah lainnya yang mempunyai akreditasi lebih baik, 
+            hal ini bisa saja kita lihat dari bagaimana prestasi yang pernah dicapai oleh masing-masing sekolah, bisa saja sekolah yang mempunyai akreditas dibawah A bisa mencapai prestasi yang lebih banyak 
+            dibandingkan dengan yang pernah dicapai oleh sekolah yang mempunyai akreditasi yang lebih bagus, sehingga bagi adik-adik yang ingin masuk dalam sekolah ini harus mempunyai kepercayaan dan keyakinan 
+            bahwa sekolah ini mampu untuk mendatangkan prestasi yang ada untuk sekolah mereka masing-masing, dimana tentu saja juga harus menyesuaikan kemampuan dari peserta didik masing-masing.<br />
+            <h3><b>Profil Sekolah</b></h3>
+            SMA Negeri 7 YOGYAKARTA merupakan salah satu sekolah yang terletak di Jalan MT. Haryono No. 47 Yogyakarta, 
+            Berdirinya SMA Negeri 7 ditandai dengan sengkalan ”Sekti Ciptaning Kusuma Jati” yang bermakna: harapan,
+             kesucian dan kesungguhan serta keteguhan hati dengan diilhami ”Tri Wulang Gapuraning Aji” yang berarti 
+             keterpaduan tiga pusat pendidikan yaitu sekolah, keluarga dan masyarakat, serta keterpaduan pengembangan cipta, 
+             rasa dan karsa. SMA Negeri 7 diharapkan menjadi gerbang bagi calon pemimpin untuk masa datang. Dengan memperhatikan sengkalan yang ada 
+            di SMA Negeri 7 Yogyakarta para pendiri telah memberi amanat kepada generasi penerus di lembaga pendidikan ini.<br />
+        </div>
+    </section>
             <ul>
                 <li>
                     <div class="tz-background-color-4" style="text-align: center">
