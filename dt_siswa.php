@@ -30,7 +30,7 @@ include("con_db/connection.php");
             <div class="container">
                 <div class="tz-header-content">
                     <h3 class="tz-logo pull-left">
-                        <a href="#"><img alt="Images Logo" src=""></a>
+                        <a href="#"><img alt="Images Logo" src="ppdb/img/logo.jpeg"></a>
                     </h3>
                     <button type="button" class="tz-button-toggle btn-navbar pull-right" data-target=".nav-collapse">
                         <i class="fa fa-bars"></i>
@@ -48,7 +48,7 @@ include("con_db/connection.php");
             <div class="tz-slider-banner">
                 <div class="tz-items">
                     <div class="tz-slider-images">
-                        <img src="" alt="Images">
+                        <img src="ppdb/img/sekolah.jpeg" alt="Images">
                     </div>
                     <div class="tz-banner-content">
                         <div class="container">
