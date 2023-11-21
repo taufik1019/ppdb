@@ -207,14 +207,14 @@ include("con_db/connection.php");
                     <div class="tz-background-color-4" style="text-align: center">
                         <h3 style="color: white">SMAVEN</h3>
                         <hr />
-                        <font color="white"></font>
+                        <font color="white">Merupakan salah satu Sekolah Negeri tingkat SMA yang terletak di Jl. MT. Haryono No.47, Suryodiningratan, Kec. Mantrijeron, Kota Yogyakarta. Tentu saja sekolah ini tidak kalah dengan sekolah-sekolah lain yang mempunyai akreditasi lebih baik.</font>
                     </div>
                 </li>
                 <li>
                     <div class="tz-background-color-4" style="text-align: center">
                         <h3 style="color: white">LOKASI </h3>
                         <hr style="border-color: #334878" />
-                        <font color="white"><br /><br /></font>
+                        <font color="white"> Jl. MT. Haryono No.47<br /> Suryodiningratan, Kec. Mantrijeron<br /> Kota Yogyakarta, Daerah Istimewa Yogyakarta 55141</font>
                     </div>
                 </li>
             </ul>
