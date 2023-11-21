@@ -58,6 +58,134 @@ include("con_db/connection.php");
         </div>
         <!-- End  class banner style-3 -->
     </section>
+
+    <!-- Begin section tz-introduce-univesity -->
+    <section class="tz-introduce-univesity">
+        <!-- Start class tzWrap -->
+        <?php
+        include("");
+        ?>
+        <div class="tzWrap">
+
+            <div class="container" id="fc">
+                <div class="row">
+
+                    <div class="tz-map-us">
+                        <h3><a href="#">FORM CEK DATA CALON SISWA BARU</a></h3>
+                        Cek Data Calon Siswa dengan cara mengisikan nomor pendaftaran yang telah terdaftar:
+                    </div>
+                    <hr />
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="text-align: justify;">
+                        <!-- Start class tz-blog-item -->
+                        <?php
+                        if (isset($_POST['tblogin'])) {
+                            $username = $_POST['username'];
+                            $ab_qr = mysqli_query($conn, "Select no_pendaftaran, nama_siswa, nisn, tempat_lahir, tgl_lahir, jenis_kelamin, agama, anak_ke, dari, status_dalam_keluarga, alamat_siswa, telepon, sekolah_asal, nama_sekolah, alamat, sttb_tahun, sttb_nomor, nama_ayah, nama_ibu, alamat_ortu, telepon_ortu, kerja_ayah, kerja_ibu, nama_wali, alamat_wali, telepon_wali, pekerjaan_wali, foto, foto_skhu, jumlah_nilai, email_aktif, kelas,status,id_siswa from tb_siswa where no_pendaftaran='$username' ");
+                            $cek_data = mysqli_num_rows($ab_qr);
+                            if ($cek_data > 0) {
+
+                                $tp_dt_sis = mysqli_fetch_row($ab_qr);
+                                $_SESSION['id_s'] = $tp_dt_sis[33];
+
+                                $tp_sis = mysqli_fetch_row(mysqli_query($conn, "select pesan from tb_konfirmasi_pendaftaran where id_siswa='$tp_dt_sis[33]'"));
+
+                                $t_by = mysqli_fetch_row(mysqli_query($conn, "Select status, id_pembayaran from tb_pembayaran where id_siswa='$tp_dt_sis[33]'"));
+
+                        ?>
+
+<div class="tz-map-us">
+                                    <article class="tz-blog-item">
+                                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                                            <div class="tz-blog-thubnail"><br />
+                                                <img src="siswa/foto_pp/<?php echo "$tp_dt_sis[27]"; ?>" style="width: 100%;" class="responsive">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                            <div class="tz-blog-description">
+
+                                                <h2 class=""> <?php echo "$tp_dt_sis[1]"; ?> </small></h2>
+                                                <strong>No. Pendaftaran</strong><br /> <?php echo "$tp_dt_sis[0]"; ?> <br /><br />
+                                                <strong>NISN</strong><br /> <?php echo "$tp_dt_sis[2]"; ?> <br /><br />
+                                                <strong>Tempat, Tanggal Lahir</strong><br /> <?php echo "$tp_dt_sis[3]"; ?>, <?php $tgfor = date("d-M-Y", strtotime($tp_dt_sis[4]));
+                                                                                                                            echo "$tgfor"; ?><br /><br />
+                                                <strong>Nama Ayah</strong><br /> <?php echo "$tp_dt_sis[17]"; ?><br /><br />
+                                                <strong>Asal Sekolah</strong><br /> <?php echo "$tp_dt_sis[12]"; ?> <br /><br />
+                                                <strong>Jumlah Nilai Rata-Rata Raport</strong><br /> <?php echo "$tp_dt_sis[29]"; ?>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                            <div class="tz-blog-description"><br />
+                                                <strong>Status Pendaftaran</strong><br />
+                                                <?php
+                                                if ($tp_dt_sis[32] == "Baru") {
+                                                ?>
+                                                    <font style="background-color: yellow">&nbsp;&nbsp;<i class="fa fa-warning"></i> Sedang Diverifikasi&nbsp;&nbsp;</font>
+                                                <?php
+                                                } elseif ($tp_dt_sis[32] == "Terdaftar") {
+                                                ?>
+                                                    <font style="background-color: green;color:white">&nbsp;&nbsp;<i class="fa fa-check"></i> Terdaftar&nbsp;&nbsp;</font>
+
+                                                    <br /><br /><strong>Catatan Pendaftaran</strong><br />
+                                                <?php
+                                                    echo "$tp_sis[0]";
+                                                } else {
+                                                ?>
+                                                    <font style="background-color: blue;color:white">&nbsp;&nbsp;<i class="fa fa-edit"></i> Batal Mendaftar&nbsp;&nbsp;</font>
+                                                    <br /><br /><strong>Catatan Pendaftaran</strong><br />
+                                                <?php
+                                                    echo "$tp_sis[0]";
+                                                }
+                                                ?>
+                                                <hr />
+                                            </div>
+                                            <div class="tz-blog-description">
+
+                                                <a href="login#fc"><button class="btn btn-success"><i class="fa fa-globe"></i> Dashboard</button></a>
+                                                <a href="pdf_siswa?d=o_cr"><button class="btn btn-danger"><i class="fa fa-print"></i> Formulir Pendaftaran</button></a>
+                                                <a href="trf_siswa?d=o_cr"><button class="btn btn-danger"><i class="fa fa-print"></i> Formulir Biaya</button></a>
+                                            </div><br />
+                                            <i class="fa fa-warning"> Bila PDF Tidak Terbaca. Coba Gunakan PDF Reader Lain (Adobe Acrobat Reader, Google Drive, dll)</i>
+                                        </div>
+                                    </article>
+                                </div>
+                            <?php
+                            } else {
+                            ?>
+                                <div class="tz-portfolio-project" style="text-align: center;">
+                                    <a href="#">Error !! Maaf Nomor Pendaftaran Anda Tidak Ditemukan.</a>
+                                </div>
+                        <?php
+                                include("");
+                            }
+                        } else {
+                            include("");
+                        }
+                        ?>
+
+                        <div class="p25 pt25" style="background-color: white">
+                            <div class="row">
+                                <div class="col-md-12">
+
+                                    <div class="col-md-2" style="vertical-align: top"><br />
+
+                                    </div>
+                                    <div class="col-md-10" style="vertical-align: top">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <br /><br />
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+                
 </body>
 
 </html>
