@@ -93,7 +93,7 @@ include("con_db/connection.php");
 
                         ?>
 
-<div class="tz-map-us">
+                                <div class="tz-map-us">
                                     <article class="tz-blog-item">
                                         <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
                                             <div class="tz-blog-thubnail"><br />
@@ -176,13 +176,48 @@ include("con_db/connection.php");
                                 </div>
                             </div>
                         </div>
-
-
-                        <br /><br />
+                        <br />
+                        <br />
                     </div>
                 </div>
             </div>
         </div>
+        </div>
+    </section>
+
+
+    <section class="tz-introduce-univesity" style="width: 100%;background: #334878">
+        <div class="tz-cource-services tz-cource-services-style-2">
+            <ul>
+                <li>
+                    <div class="tz-background-color-4" style="text-align: center">
+                        <h3 style="color: white">PPDB ONLINE</h3>
+                        <hr />
+                        <font color="white">Sistem Informasi Penerimaan Siswa Baru SMA NEGERI 7 YOGYAKARTA Merupakan sistem informasi berbasis web yang dibangun menggunakan Bahasa Pemrograman PHP database MySQL. Sedangkan Front End dari Sistem Informasi ini menggunakan PHP Native dan Bootstrap agar tampilan terlihat Menarik</font>
+                    </div>
+                </li>
+                <li>
+                    <div class="tz-background-color-4" style="text-align: center">
+                        <h3 style="color: white">MANFAAT</h3>
+                        <hr style="border-color: #334878" />
+                        <font color="white">Dengan adanya Sistem Informasi PPDB Online di SMA NEGERI 7 YOGYAKARTA diharapkan dapat membantu Calon siswa untuk melakukan Pendaftaran Tanpa harus datang ke sekolah untuk melakukan pendaftaran, menghemat biaya dan Waktu.</font>
+                    </div>
+                </li>
+                <li>
+                    <div class="tz-background-color-4" style="text-align: center">
+                        <h3 style="color: white">SMAVEN</h3>
+                        <hr />
+                        <font color="white"></font>
+                    </div>
+                </li>
+                <li>
+                    <div class="tz-background-color-4" style="text-align: center">
+                        <h3 style="color: white">LOKASI </h3>
+                        <hr style="border-color: #334878" />
+                        <font color="white"><br /><br /></font>
+                    </div>
+                </li>
+            </ul>
         </div>
     </section>
                 
