@@ -220,6 +220,15 @@ include("con_db/connection.php");
             </ul>
         </div>
     </section>
+    <footer class="tz-footer">
+
+        <div class="tz-footer-address-site">
+            <address> Hak Cipta Kelompok 1 (A2) @ <?php date_default_timezone_set("Asia/Jakarta");
+                                                                $thn = date("Y");
+                                                                echo "$thn"; ?> 
+        </div>
+</footer>
+<!-- End Footer -->
                 
 </body>
 
