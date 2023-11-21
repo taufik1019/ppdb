@@ -36,6 +36,28 @@ include("con_db/connection.php");
         </div>
     </header>
     <!-- End class tz-header-2 -->
+
+        <section class="tz-banner tz-banner-style2">
+        <!-- Begin class banner style-3 -->
+        <div class="tz-banner-style2">
+            <div class="tz-slider-banner">
+                <div class="tz-items">
+                    <div class="tz-slider-images">
+                        <img src="" alt="Images">
+                    </div>
+                    <div class="tz-banner-content">
+                        <div class="container">
+                            <!-- <small>NUMBER ONE</small> -->
+                            <h4>SMA NEGERI 7 YOGYAKARTA</h4>
+                            <span class="tz-under-line"></span>
+                            <h6>Aplikasi PPDB Online</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End  class banner style-3 -->
+    </section>
 </body>
 
 </html>
