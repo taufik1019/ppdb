@@ -143,11 +143,6 @@
                                             <span class="panel-title">Proses Informasi Penting</span>
                                         </div>
                                         <div class="panel-body">
-                  
-                                                
-                                    
-                                                    
-
                                                     <div class="panel-body pn">
                                                         <div style="border:1px solid white;width:100%;height:100%;overflow-y:hidden;overflow-x:scroll;">
                                                             <table class="table table-striped table-bordered table-hover" id="datatable2" cellspacing="0" style="width: 100%">
@@ -159,12 +154,16 @@
                                                                         <th style="width: 10%">Tindakan</th>
                                                                     </tr>
                                                                 </thead>
+                                                                
                                                                 <tbody>
-                                                                               
-                                                                     </div>
-                                                                </div>
-                                                </form>
-                
+                                                                <tr>
+                                                                    <td style="vertical-align: top;"></td>
+                                                                    <buttom class="btn btn-denger"><i class="fa fa-edit"></i></buttom>
+                                                                </tr>
+                                                            </tbody> 
+                                                        </table>      
+                                                     </div>
+                                                </div>
                                 </div>
                             </div>
                         </section>
