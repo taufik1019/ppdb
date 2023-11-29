@@ -63,7 +63,7 @@
 
                                     <li class="sidebar-label pt15">Data Pendaftar</li>
                                     <li>
-                                        <a href="vf_siswa">
+                                        <a href="verifpendaftaran">
                                             <span class="glyphicons glyphicons-edit"></span> 
                                             <span class="sidebar-title">Verifikasi Pendaftar</span>
                                         </a>
@@ -71,7 +71,7 @@
 
                                     <li class="sidebar-label pt15">Data Pembayaran</li>
                                     <li class="active">
-                                        <a href="lkp_form_byr">
+                                        <a href="verpembayaran">
                                             <span class="glyphicons glyphicons-edit"></span> 
                                             <span class="sidebar-title">Verifikasi Pembayaran</span>
                                         </a>
