@@ -157,9 +157,16 @@
                                                                 
                                                                 <tbody>
                                                                 <tr>
-                                                                    <td style="vertical-align: top;"></td>
-                                                                    <buttom class="btn btn-denger"><i class="fa fa-edit"></i></buttom>
-                                                                </tr>
+                                                                <td style="vertical-align: top;">
+                                                                <td style="vertical-align: top;">
+                                                                <td style="vertical-align: top;">
+                                                                <td style="vertical-align: top;">
+                                                                <button class="btn btn-success"><i class="fa fa-edit"></i></button>
+                                                                                        
+                                                                <button class="btn btn-danger"><i class="fa fa-close"></i></button>
+                                                                                            
+                                                                </td>
+                                                            </tr>
                                                             </tbody> 
                                                         </table>      
                                                      </div>
