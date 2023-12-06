@@ -107,7 +107,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 
                                     <li class="sidebar-label pt15">Data Pembayaran</li>
                                     <li class="active">
-                                        <a href="lkp_form_byr">
+                                        <a href="verpembayaran">
                                             <span class="glyphicons glyphicons-edit"></span> 
                                             <span class="sidebar-title">Verifikasi Pembayaran</span>
                                         </a>
