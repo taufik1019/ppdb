@@ -334,6 +334,34 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 				                    <div class="panel-body mnw700 of-a">
 				                        <div class="row">
 
+				                            <!-- Chart Column -->
+				                            <div class="col-md-6 br-r">
+				                                <h5 class="mt5 mbn ph10 pb5 br-b fw700">Pendaftar Baru<small class="pull-right fw700 text-primary">Lihat</small> </h5>
+				                                <table class="table mbn tc-med-1 tc-bold-last tc-fs13-last">
+				                                    <thead>
+				                                        <tr class="hidden">
+				                                            <th>Source</th>
+				                                            <th>Count</th>
+				                                        </tr>
+				                                    </thead>
+				        	                        <tbody>
+														<?php
+				                                    	$a_n_r=mysqli_query($conn,"Select nama_siswa, tgl_entry from tb_siswa where status='Baru' order by tgl_entry desc limit 5");
+				                                     	while($t_n_r=mysqli_fetch_row($a_n_r))
+				                                    	{
+				                                    		$f_da=date("d-M-Y H:i",strtotime($t_n_r[1]));
+				                        	        		?>
+				                                    		<tr>
+					                                            <td><?php echo"$t_n_r[0]";?></td>
+					                        	                <td><?php echo"$f_da";?></td>
+					                                        </tr>
+				                        	        		<?php
+				                                        }
+				                                    	?>
+				                                    </tbody>
+				                                </table>
+				                            </div>
+
 											<!-- Multi Text Column -->
 				                            <!-- <div class="col-md-4 br-r">
 				                                <h5 class="mt5 mbn ph10 pb5 br-b fw700">Pembayaran Baru<small class="pull-right fw700 text-primary">Lihat</small> </h5>
