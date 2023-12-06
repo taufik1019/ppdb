@@ -417,8 +417,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 														</tbody>
 				                                    </table>
 				                                </div>
-
-				                                        
+   
 				                            </div>
 				                        </div>
 				                    </div>
@@ -432,10 +431,6 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 
 			    </section>
 			    <!-- End: Content-Wrapper -->
-
-		        <!-- Start: Right Sidebar -->
-				       
-		        <!-- End: Right Sidebar -->
 			</div>
 			<!-- End: Main -->
 
@@ -493,15 +488,9 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 				        onFinish: function() {
 			                $('.admin-panels').addClass('animated fadeIn').removeClass('fade-onLoad');
 
-				            // Init the rest of the plugins now that the panels
-				            // have had a chance to be moved and organized.
-			                // It's less taxing to organize empty panels
 				            demoHighCharts.init();
 				            runVectorMaps();
 
-				            // We also refresh any "in-view" waypoints to ensure
-				            // the correct position is being calculated after the 
-		                    // Admin Panels plugin moved everything
 				            Waypoint.refreshAll();
 
 				        },
