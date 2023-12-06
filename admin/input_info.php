@@ -297,6 +297,32 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 
                         </script>
 
+                    <!-- Google Map API -->
+                    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
+                    <!-- jQuery -->
+                    <script type="text/javascript" src="vendor/jquery/jquery-1.11.1.min.js"></script>
+                    <script type="text/javascript" src="vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
+
+                    <!-- Bootstrap -->
+                    <script type="text/javascript" src="assets/js/bootstrap/bootstrap.min.js"></script>
+
+                    <!-- Page Plugins via CDN -->
+                    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/globalize/0.1.1/globalize.min.js"></script>
+                    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.js"></script>
+
+                    <!-- via local files 
+                    <script type="text/javascript" src="vendor/plugins/globalize/src/core.js"></script>
+                    <script type="text/javascript" src="vendor/plugins/moment/moment.min.js"></script> -->
+
+                    <!-- Page Plugins -->
+                    <script type="text/javascript" src="vendor/plugins/daterange/daterangepicker.js"></script>
+                    <script type="text/javascript" src="vendor/plugins/datepicker/js/bootstrap-datetimepicker.js"></script>
+                    <script type="text/javascript" src="vendor/plugins/colorpicker/js/bootstrap-colorpicker.min.js"></script>
+                    <script type="text/javascript" src="vendor/plugins/jquerymask/jquery.maskedinput.min.js"></script>
+                    <script type="text/javascript" src="vendor/plugins/tagmanager/tagmanager.js"></script>
+                    
+
                 </body>
                 </html>
 

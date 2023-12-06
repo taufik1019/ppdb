@@ -111,17 +111,6 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                             <span class="sidebar-title">Verifikasi Pembayaran</span>
                                         </a>
                                     </li>
-
-
-                                    <li class="sidebar-label pt15">Data Pesan</li>
-                                    <li>
-                                        <a href="pro_mes">
-                                            <span class="glyphicons glyphicons-envelope"></span> 
-                                            <span class="sidebar-title">Proses Pesan</span>
-                                        </a>
-                                    </li>
-
-
                                     <li class="sidebar-label pt15">Proses Informasi</li>
                                     <li>
                                         <a href="in_info">
