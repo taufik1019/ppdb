@@ -43,6 +43,114 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
                     <![endif]-->
                 </head>
+
+                <body class="form-input-page">
+
+                    <!-- Start: Main -->
+                    <div id="main">
+
+                        <!-- Start: Header -->
+                        <header class="navbar navbar-fixed-top bg-light">
+                            <div class="navbar-branding">
+                                <a class="navbar-brand" href="index"> <b>Panel</b>Dashboard
+                                </a>
+                                <span id="toggle_sidemenu_l" class="glyphicons glyphicons-show_lines"></span>
+                                <ul class="nav navbar-nav pull-right hidden">
+                                    <li>
+                                        <a href="#" class="sidebar-menu-toggle">
+                                            <span class="octicon octicon-ruby fs20 mr10 pull-right "></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <?php
+                                include("top_acc.php");
+                            ?>
+                        </header>
+                        <!-- End: Header -->
+
+                        <!-- Start: Sidebar -->
+                        <aside id="sidebar_left" class="nano nano-primary">
+                            <div class="nano-content">
+                                <!-- sidebar menu -->
+                                <ul class="nav sidebar-menu">
+                                    <li>
+                                        <a href="index">
+                                            <span class="glyphicons glyphicons-home"></span>
+                                            <span class="sidebar-title">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <!-- <li class="sidebar-label pt15">Data Biaya Sekolah</li>
+                                    <li>
+                                        <a href="ip_biaya">
+                                            <span class="glyphicons glyphicons-book"></span> 
+                                            <span class="sidebar-title">Input Biaya</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="up_biaya">
+                                            <span class="glyphicons glyphicons-delete"></span> 
+                                            <span class="sidebar-title">Update Biaya</span>
+                                        </a>
+                                    </li> -->
+
+                                    <li class="sidebar-label pt15">Data Pendaftar</li>
+                                    <li>
+                                        <a href="vf_siswa">
+                                            <span class="glyphicons glyphicons-edit"></span> 
+                                            <span class="sidebar-title">Verifikasi Pendaftar</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-label pt15">Data Pembayaran</li>
+                                    <li>
+                                        <a href="lkp_form_byr">
+                                            <span class="glyphicons glyphicons-edit"></span> 
+                                            <span class="sidebar-title">Verifikasi Pembayaran</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="sidebar-label pt15">Proses Informasi</li>
+                                    <li class="active">
+                                        <a href="in_info">
+                                            <span class="glyphicons glyphicons-notes"></span> 
+                                            <span class="sidebar-title">Input Informasi</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="up_info">
+                                            <span class="glyphicons glyphicons-list"></span> 
+                                            <span class="sidebar-title">List Informasi</span>
+                                        </a>
+                                    </li>
+
+                                    <hr />
+                                    <li>
+                                        <a href="lg_user">
+                                            <span class="glyphicons glyphicons-bell"></span>
+                                            <span class="sidebar-title">Log User</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="logout">
+                                            <span class="glyphicons glyphicons-pen"></span>
+                                            <span class="sidebar-title">Logout</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="sidebar-toggle-mini">
+                                    <a href="#">
+                                        <span class="fa fa-sign-out"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </aside>
+                        <!-- End: Sidebar -->
+                    </div>
+                </body>
                 </html>
 
 
