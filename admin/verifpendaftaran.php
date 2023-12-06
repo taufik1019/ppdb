@@ -458,7 +458,6 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                         <!-- Start: Right Sidebar -->
                         
                         <!-- End: Right Sidebar -->
-
                     </div>
                 </body>
                 </html>
