@@ -174,7 +174,29 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 
                             </header>
                          <!-- End: Topbar -->
-                       
+                         <div id="content">
+                                <div class="row">
+                                    <div class="panel">
+                                        <div class="panel-heading">
+                                            <span class="panel-title">Proses Verifikasi Data Pembayaran</span>
+                                        </div>
+                                        <div class="panel-body">
+                                            <?php
+                                            if(isset($_GET['r_e']))
+                                            {
+                                                $r_e=$_GET["r_e"];
+                                                $st3=$_GET['st'];
+                                                mysqli_query($conn,"Update  tb_siswa set status_pembayaran='Belum' where id_siswa='$r_e'");
+                                                mysqli_query($conn,"Delete From tb_pembayaran where id_siswa='$r_e'");
+                                                  ?>
+                                                
+                                                <div class="alert alert-success alert-dismissable">
+                                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                                <i class="fa fa-check pr10"></i>
+                                                <strong>Selamat</strong> Anda Membuka 
+                                                <a href="#" class="alert-link"> Verifikasi Kembali</a>.</div>
+                                                <meta http-equiv="refresh" content="5;url=lkp_form_byr">
+                                                <?php
                                             }
 
                                             if(isset($_GET['up']))
