@@ -348,7 +348,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                                     <a href="#" class="alert-link"> Silahkan Hapus yang Lain</a>.</div>
                                                     <meta http-equiv="refresh" content="5;url=lkp_form_byr?st=<?php echo"$st";?>">
                                                     <?php
-                                                    // include("form_prt_sis.php");
+                                                
                                                 }
 
                                                 if(isset($_GET['st_a']))
@@ -362,7 +362,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                                     <a href="#" class="alert-link"> Silahkan Konfirmasi yang Lain</a>.</div>
                                                     <meta http-equiv="refresh" content="5;url=lkp_form_byr?st=<?php echo"$st";?>">
                                                     <?php
-                                                    // include("form_prt_byr.php");
+                                                 
                                                 }
 
                                                 if(isset($_GET['u']))
