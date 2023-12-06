@@ -44,7 +44,32 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
                     <![endif]-->
                 </head>
-                
+                <body calss="form-input-page">
+
+                    <!-- Start: Main -->
+                    <div id="main">
+
+                                             <!-- Start: Header -->
+                                             <header class="navbar navbar-fixed-top bg-light">
+                            <div class="navbar-branding">
+                                <a class="navbar-brand" href="index"> <b>Panel</b>Dashboard
+                                </a>
+                                <span id="toggle_sidemenu_l" class="glyphicons glyphicons-show_lines"></span>
+                                <ul class="nav navbar-nav pull-right hidden">
+                                    <li>
+                                        <a href="#" class="sidebar-menu-toggle">
+                                            <span class="octicon octicon-ruby fs20 mr10 pull-right "></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <?php
+                                include("top_acc.php");
+                            ?>
+                        </header>
+                        <!-- End: Header -->   
+                </body>
                 </html>
 
 
