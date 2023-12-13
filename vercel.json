@@ -6,8 +6,11 @@
     ],
     "routes": [
         {
-            "src": "style.css/(css|js)/(.*)",
-            "dest": "public/$1/$2"
+            "src": "/(css|js)/(.*)",
+            "dest": "/$1/$2"
+        },
+        {
+            "src": "style.css"
         },
         {
             "src": "/(.*)",
