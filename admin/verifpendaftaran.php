@@ -1020,10 +1020,9 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
         });
     </script>
                 </body>
-                
+
                 </html>
-
-
+                
 
 <?php
             }
