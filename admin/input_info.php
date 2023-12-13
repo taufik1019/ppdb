@@ -503,7 +503,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                         });
                     </script>
                 </body>
-                
+
                 </html>
 
 
@@ -517,6 +517,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                 </script>
                 <?php
             }
+            
     }
 else
     {
