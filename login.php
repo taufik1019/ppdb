@@ -36,12 +36,11 @@ include("con_db/connection.php");
                     </button>
                     <nav class="nav-collapse pull-right">
                         <ul class="tz-menu">
-                            <li><a href="index">HOME</a></li>
-                            <li><a href="mendaftar#fc">MENDAFTAR</a></li>
-                            <li><a href="dt_siswa">DATA CALON SISWA</a></li>
-                            <li><a href="grafik#fc">GRAFIK</a></li>
-                            <li><a href="login#fc">LOGIN</a></li>
-                            <li><a href="kontak#fc">KONTAK</a></li>
+                            <li><a href="index.php">HOME</a></li>
+                            <li><a href="mendaftar.php">MENDAFTAR</a></li>
+                            <li><a href="dt_siswa.php">DATA CALON SISWA</a></li>
+                            <li><a href="grafik.php">GRAFIK</a></li>
+                            <li><a href="login.php">LOGIN</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -56,7 +55,7 @@ include("con_db/connection.php");
             <div class="tz-slider-banner">
                 <div class="tz-items">
                     <div class="tz-slider-images">
-                        <img src="demos/Banner/banner-03.jpg" alt="Images">
+                        <img src="img/sekolah.jpeg" alt="Images">
                     </div>
                     <div class="tz-banner-content">
                         <div class="container">
@@ -80,19 +79,19 @@ include("con_db/connection.php");
                 <li>
                     <div class="tz-background-color-1">
                         <a href="mendaftar#fc"><i class="tz-color-1 fa fa-file-text-o"></i></a>
-                        <span><a href="mendaftar#fc">MENDAFTAR</a></span>
+                        <span><a href="mendaftar.php">MENDAFTAR</a></span>
                     </div>
                 </li>
                 <li>
                     <div class="tz-background-color-2">
                         <a href="dt_siswa"><i class="tz-color-2 fa fa-paperclip"></i></a>
-                        <span><a href="dt_sw">DATA SISWA</a></span>
+                        <span><a href="dt_siswa.php">DATA SISWA</a></span>
                     </div>
                 </li>
                 <li>
                     <div class="tz-background-color-3">
                         <a href="grafik#fc"><i class="tz-color-3 fa fa-magic"></i></a>
-                        <span><a href="grafik">GRAFIK</a></span>
+                        <span><a href="grafik.php">GRAFIK</a></span>
                     </div>
                 </li>
                 <li>
@@ -154,45 +153,7 @@ include("con_db/connection.php");
                                         window.location = "admin/index.php";
                                     </script>
                                 <?php
-                                } elseif ($username == $fi_us && $enc_ps2 == $fi_ps && $fi_st == "Kepsek") {
-                                    $_SESSION['fi_id'] = $fi_id;
-                                    $_SESSION['fi_us'] = $fi_us;
-                                    $_SESSION['fi_ps'] = $fi_ps;
-                                    $_SESSION['fi_st'] = $fi_st;
-
-                                ?>
-                                    <script type="text/javascript">
-                                        window.location = "kepsek/index.php";
-                                    </script>
-                                <?php
-                                } elseif ($username == $fi_us && $enc_ps2 == $fi_ps && $fi_st == "Bendahara") {
-                                    $_SESSION['fi_id'] = $fi_id;
-                                    $_SESSION['fi_us'] = $fi_us;
-                                    $_SESSION['fi_ps'] = $fi_ps;
-                                    $_SESSION['fi_st'] = $fi_st;
-
-                                ?>
-                                    <script type="text/javascript">
-                                        window.location = "bendahara/index.php";
-                                    </script>
-                                <?php
-                                } elseif ($username == $fi_us && $enc_ps2 == $fi_ps && $fi_st == "Wawancara") {
-                                    $_SESSION['fi_id'] = $fi_id;
-                                    $_SESSION['fi_us'] = $fi_us;
-                                    $_SESSION['fi_ps'] = $fi_ps;
-                                    $_SESSION['fi_st'] = $fi_st;
-
-                                ?>
-                                    <script type="text/javascript">
-                                        window.location = "wawancara/index.php";
-                                    </script>
-                                <?php
-                                } else {
-                                ?>
-                                    <div class="tz-portfolio-project">
-                                        <a href="#">Error !! Anda Gagal Login Username dan Password Yang Anda Inputkan Tidak Terdaftar.</a>
-                                    </div>
-                            <?php
+                                
                                 }
                             }
                         }

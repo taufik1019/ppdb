@@ -57,7 +57,7 @@ include("con_db/connection.php");
             <div class="tz-slider-banner">
                 <div class="tz-items">
                     <div class="tz-slider-images">
-                        <img src="" alt="Images">
+                        <img src="img/sekolah.jpeg" alt="Images">
                     </div>
                     <div class="tz-banner-content">
                         <div class="container">

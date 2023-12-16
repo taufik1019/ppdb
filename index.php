@@ -28,15 +28,9 @@
                     <button type="button" class="tz-button-toggle btn-navbar pull-right" data-target=".nav-collapse">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <nav class="nav-collapse pull-right">
-                        <ul class="tz-menu">
-                            <li><a href="index">HOME</a></li>
-                            <li><a href="mendaftar#fc">MENDAFTAR</a></li>
-                            <li><a href="dt_siswa">DATA CALON SISWA</a></li>
-                            <li><a href="grafik#fc">GRAFIK</a></li>
-                            <li><a href="login#fc">LOGIN</a></li>
-                        </ul>
-                    </nav>
+                    <?php
+                    include ("top_menu.php");
+                    ?>
                 </div>
             </div><!-- End Content Main Header -->
         </div>
@@ -70,34 +64,9 @@
 
     <!-- Begin section tz-introduce-univesity -->
     <section class="tz-introduce-univesity">
-        <div class="tz-cource-services tz-cource-services-style-2">
-            <ul>
-                <li>
-                    <div class="tz-background-color-1">
-                        <a href="#"><i class="tz-color-1 fa fa-file-text-o"></i></a>
-                        <span><a href="mendaftar#fc">MENDAFTAR</a></span>
-                    </div>
-                </li>
-                <li>
-                    <div class="tz-background-color-2">
-                        <a href="dt_siswa"><i class="tz-color-2 fa fa-paperclip"></i></a>
-                        <span><a href="dt_sw">DATA SISWA</a></span>
-                    </div>
-                </li>
-                <li>
-                    <div class="tz-background-color-3">
-                        <a href="grafik#fc"><i class="tz-color-3 fa fa-magic"></i></a>
-                        <span><a href="grafik">GRAFIK</a></span>
-                    </div>
-                </li>
-                <li>
-                    <div class="tz-background-color-4">
-                        <a href="login#fc"><i class="tz-color-4 fa fa-cog"></i></a>
-                        <span><a href="login#fc">LOGIN</a></span>
-                    </div>
-                </li>
-            </ul>
-        </div>
+       <?php
+       include("btn_4.php");
+       ?>
         <!--- -->
     </section>
    

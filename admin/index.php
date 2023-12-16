@@ -69,7 +69,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 
 					<li class="sidebar-label pt15">Data Pendaftar</li>
 				    <li>
-				        <a href="vf_siswa">
+				        <a href="verifpendaftaran.php">
 				            <span class="glyphicons glyphicons-edit"></span> 
 				            <span class="sidebar-title">Verifikasi Pendaftar</span>
 				        </a>
@@ -77,29 +77,20 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 
 					<li class="sidebar-label pt15">Data Pembayaran</li>
 				    <li>
-				        <a href="lkp_form_byr">
+				        <a href="verpembayaran.php">
 				            <span class="glyphicons glyphicons-edit"></span> 
 				            <span class="sidebar-title">Verifikasi Pembayaran</span>
 				        </a>
 				    </li>
-					
-					<li class="sidebar-label pt15">Data Pesan</li>
-				    <li>
-				        <a href="pro_mes">
-				            <span class="glyphicons glyphicons-envelope"></span> 
-				            <span class="sidebar-title">Proses Pesan</span>
-				        </a>
-				    </li>
-
 					<li class="sidebar-label pt15">Proses Informasi</li>
 				    <li>
-				        <a href="in_info">
+				        <a href="in_info.php">
 				            <span class="glyphicons glyphicons-notes"></span> 
 				            <span class="sidebar-title">Input Informasi</span>
 				        </a>
 				    </li>
 					<li>
-				        <a href="up_info">
+				        <a href="up_info.php">
 				            <span class="glyphicons glyphicons-list"></span> 
 				            <span class="sidebar-title">List Informasi</span>
 				        </a>
@@ -113,7 +104,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 				        </a>
 				    </li>
                     <li>
-                        <a href="logout">
+                        <a href="logout.php">
                             <span class="glyphicons glyphicons-pen"></span>
                             <span class="sidebar-title">Logout</span>
                         </a>
@@ -154,7 +145,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 		                    	$reg_trm=mysqli_num_rows(mysqli_query($conn,"Select * from tb_siswa where status_pembayaran='Diterima'"));
 					        	$reg_cdg=mysqli_num_rows(mysqli_query($conn,"Select * from tb_siswa where status_pembayaran='Cadangan'"));
 					          	$reg_blm=mysqli_num_rows(mysqli_query($conn,"Select * from tb_siswa where status_pembayaran='Belum' and status='Terdaftar'"));
-			                	$msg_new=mysqli_num_rows(mysqli_query($conn,"Select * from tb_pesan where status='Baru'"));
+			                	
 
 					        ?>
 
@@ -401,19 +392,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 				                                            </tr>
 				                                        </thead>
 				                                        <tbody>
-				                                        	<?php
-				                                        	$a_n_m=mysqli_query($conn,"Select nama_lengkap, tgl_kirim from tb_pesan where status='Baru' order by tgl_kirim desc limit 5");
-				                                        	while($t_n_m=mysqli_fetch_row($a_n_m))
-				                                        	{
-				                                        		$f_d=date("d-M-Y H:i",strtotime($t_n_m[1]));
-				                                        		?>
-				                                        		<tr>
-					                                                <td><?php echo"$t_n_m[0]";?></td>
-					                                                <td><?php echo"$f_d";?></td>
-					                                            </tr>
-				                                        		<?php
-				                                        	}
-				                                        	?>
+				                                        	
 														</tbody>
 				                                    </table>
 				                                </div>

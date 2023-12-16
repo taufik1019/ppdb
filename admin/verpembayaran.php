@@ -98,65 +98,54 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                     </li> -->
 
                                     <li class="sidebar-label pt15">Data Pendaftar</li>
-                                    <li>
-                                        <a href="verifpendaftaran">
-                                            <span class="glyphicons glyphicons-edit"></span> 
-                                            <span class="sidebar-title">Verifikasi Pendaftar</span>
-                                        </a>
-                                    </li>
+				    <li>
+				        <a href="verifpendaftaran.php">
+				            <span class="glyphicons glyphicons-edit"></span> 
+				            <span class="sidebar-title">Verifikasi Pendaftar</span>
+				        </a>
+				    </li>
 
-                                    <li class="sidebar-label pt15">Data Pembayaran</li>
-                                    <li class="active">
-                                        <a href="verpembayaran">
-                                            <span class="glyphicons glyphicons-edit"></span> 
-                                            <span class="sidebar-title">Verifikasi Pembayaran</span>
-                                        </a>
-                                    </li>
+					<li class="sidebar-label pt15">Data Pembayaran</li>
+				    <li>
+				        <a href="verpembayaran.php">
+				            <span class="glyphicons glyphicons-edit"></span> 
+				            <span class="sidebar-title">Verifikasi Pembayaran</span>
+				        </a>
+				    </li>
+					<li class="sidebar-label pt15">Proses Informasi</li>
+				    <li>
+				        <a href="in_info.php">
+				            <span class="glyphicons glyphicons-notes"></span> 
+				            <span class="sidebar-title">Input Informasi</span>
+				        </a>
+				    </li>
+					<li>
+				        <a href="up_info.php">
+				            <span class="glyphicons glyphicons-list"></span> 
+				            <span class="sidebar-title">List Informasi</span>
+				        </a>
+				    </li>
 
-
-                                    <li class="sidebar-label pt15">Data Pesan</li>
-                                    <li>
-                                        <a href="pro_mes">
-                                            <span class="glyphicons glyphicons-envelope"></span> 
-                                            <span class="sidebar-title">Proses Pesan</span>
-                                        </a>
-                                    </li>
-
-
-                                    <li class="sidebar-label pt15">Proses Informasi</li>
-                                    <li>
-                                        <a href="in_info">
-                                            <span class="glyphicons glyphicons-notes"></span> 
-                                            <span class="sidebar-title">Input Informasi</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="up_info">
-                                            <span class="glyphicons glyphicons-list"></span> 
-                                            <span class="sidebar-title">List Informasi</span>
-                                        </a>
-                                    </li>
-
-                                    <hr />
-                                    <li>
-                                        <a href="lg_user">
-                                            <span class="glyphicons glyphicons-bell"></span>
-                                            <span class="sidebar-title">Log User</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="logout">
-                                            <span class="glyphicons glyphicons-pen"></span>
-                                            <span class="sidebar-title">Logout</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div class="sidebar-toggle-mini">
-                                    <a href="#">
-                                        <span class="fa fa-sign-out"></span>
-                                    </a>
-                                </div>
-                            </div>
+					<hr />
+				    <li>
+				        <a href="lg_user">
+				            <span class="glyphicons glyphicons-bell"></span>
+				            <span class="sidebar-title">Log User</span>
+				        </a>
+				    </li>
+                    <li>
+                        <a href="logout.php">
+                            <span class="glyphicons glyphicons-pen"></span>
+                            <span class="sidebar-title">Logout</span>
+                        </a>
+                    </li>
+				</ul>
+				<div class="sidebar-toggle-mini">
+				    <a href="#">
+		            	<span class="fa fa-sign-out"></span>
+		            </a>
+				</div>
+			</div>
                         </aside>
                         <!-- End: Sidebar -->
 
