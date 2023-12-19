@@ -82,21 +82,21 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                     
                                     <li class="sidebar-label pt15">Data Biaya Sekolah</li>
                                     <li>
-                                        <a href="ip_biaya">
+                                        <a href="ip_biaya.php">
                                             <span class="glyphicons glyphicons-book"></span> 
                                             <span class="sidebar-title">Input Biaya</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="up_biaya">
+                                        <a href="up_biaya.php">
                                             <span class="glyphicons glyphicons-delete"></span> 
                                             <span class="sidebar-title">Update Biaya</span>
                                         </a>
                                     </li>
 
                                     <li class="sidebar-label pt15">Data Pendaftar</li>
-                                    <li class="active">
-                                        <a href="vf_siswa">
+                                    <li>
+                                        <a href="verifpendaftaran.php">
                                             <span class="glyphicons glyphicons-edit"></span> 
                                             <span class="sidebar-title">Verifikasi Pendaftar</span>
                                         </a>
@@ -104,31 +104,20 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 
                                     <li class="sidebar-label pt15">Data Pembayaran</li>
                                     <li>
-                                        <a href="lkp_form_byr">
+                                        <a href="verpembayaran.php">
                                             <span class="glyphicons glyphicons-edit"></span> 
                                             <span class="sidebar-title">Verifikasi Pembayaran</span>
                                         </a>
                                     </li>
-
-
-                                    <li class="sidebar-label pt15">Data Pesan</li>
-                                    <li>
-                                        <a href="pro_mes">
-                                            <span class="glyphicons glyphicons-envelope"></span> 
-                                            <span class="sidebar-title">Proses Pesan</span>
-                                        </a>
-                                    </li>
-
-
                                     <li class="sidebar-label pt15">Proses Informasi</li>
                                     <li>
-                                        <a href="in_info">
+                                        <a href="in_info.php">
                                             <span class="glyphicons glyphicons-notes"></span> 
                                             <span class="sidebar-title">Input Informasi</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="up_info">
+                                        <a href="up_info.php">
                                             <span class="glyphicons glyphicons-list"></span> 
                                             <span class="sidebar-title">List Informasi</span>
                                         </a>
@@ -142,7 +131,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="logout">
+                                        <a href="logout.php">
                                             <span class="glyphicons glyphicons-pen"></span>
                                             <span class="sidebar-title">Logout</span>
                                         </a>

@@ -82,20 +82,6 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                             <span class="sidebar-title">Dashboard</span>
                                         </a>
                                     </li>
-                                    
-                                    <!-- <li class="sidebar-label pt15">Data Biaya Sekolah</li>
-                                    <li>
-                                        <a href="ip_biaya">
-                                            <span class="glyphicons glyphicons-book"></span> 
-                                            <span class="sidebar-title">Input Biaya</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="up_biaya">
-                                            <span class="glyphicons glyphicons-delete"></span> 
-                                            <span class="sidebar-title">Update Biaya</span>
-                                        </a>
-                                    </li> -->
 
                                     <li class="sidebar-label pt15">Data Pendaftar</li>
                                     <li>

@@ -83,11 +83,9 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                         </a>
                                     </li>
                                     
-                                   
-
                                     <li class="sidebar-label pt15">Data Pendaftar</li>
                                     <li>
-                                        <a href="vf_siswa">
+                                        <a href="verifpendaftaran.php">
                                             <span class="glyphicons glyphicons-edit"></span> 
                                             <span class="sidebar-title">Verifikasi Pendaftar</span>
                                         </a>
@@ -95,37 +93,34 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 
                                     <li class="sidebar-label pt15">Data Pembayaran</li>
                                     <li>
-                                        <a href="lkp_form_byr">
+                                        <a href="verpembayaran.php">
                                             <span class="glyphicons glyphicons-edit"></span> 
                                             <span class="sidebar-title">Verifikasi Pembayaran</span>
                                         </a>
                                     </li>
-
-
-
                                     <li class="sidebar-label pt15">Proses Informasi</li>
                                     <li>
-                                        <a href="in_info">
+                                        <a href="in_info.php">
                                             <span class="glyphicons glyphicons-notes"></span> 
                                             <span class="sidebar-title">Input Informasi</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="up_info">
+                                        <a href="up_info.php">
                                             <span class="glyphicons glyphicons-list"></span> 
                                             <span class="sidebar-title">List Informasi</span>
                                         </a>
                                     </li>
 
                                     <hr />
-                                    <li class="active">
+                                    <li>
                                         <a href="lg_user">
                                             <span class="glyphicons glyphicons-bell"></span>
                                             <span class="sidebar-title">Log User</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="logout">
+                                        <a href="logout.php">
                                             <span class="glyphicons glyphicons-pen"></span>
                                             <span class="sidebar-title">Logout</span>
                                         </a>
