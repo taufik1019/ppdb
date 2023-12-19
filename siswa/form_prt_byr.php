@@ -316,7 +316,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                                     Atas Nama
                                                 </div>
                                                 <div class="col-md-8" style="vertical-align: top">
-                                                    : Risma Pavita ( Bendahara SMP N 7 Yogyakarta)
+                                                    : Risma Pavita ( Bendahara SMA N 7 Yogyakarta)
                                                 </div>
                                             </div>
                                         </div>

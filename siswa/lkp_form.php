@@ -75,26 +75,26 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                 <!-- sidebar menu -->
                                 <ul class="nav sidebar-menu">
                                     <li>
-                                        <a href="index">
+                                        <a href="index.php">
                                             <span class="glyphicons glyphicons-home"></span>
                                             <span class="sidebar-title">Dashboard</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="profil">
+                                        <a href="profil.php">
                                             <span class="glyphicons glyphicons-cup"></span>
                                             <span class="sidebar-title">Profile Sekolah</span>
                                         </a>
                                     </li>
                                     <li class="sidebar-label pt15">Data Siswa</li>
                                     <li class="active">
-                                        <a href="lkp_form">
+                                        <a href="lkp_form.php">
                                             <span class="glyphicons glyphicons-book"></span> 
                                             <span class="sidebar-title">Lengkapi Biodata</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="prt_form">
+                                        <a href="prt_form.php">
                                             <span class="glyphicons glyphicons-print"></span> 
                                             <span class="sidebar-title">Cetak Formulir</span>
                                         </a>
