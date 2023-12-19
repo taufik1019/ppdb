@@ -63,6 +63,46 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                         </header>
                         <!-- End: Header -->
 
+                        <!-- Start: Sidebar -->
+                        <aside id="sidebar_left" class="nano nano-primary">
+                            <div class="nano-content">
+                                <!-- sidebar menu -->
+                                <ul class="nav sidebar-menu">
+                                    <li>
+                                        <a href="index">
+                                            <span class="glyphicons glyphicons-home"></span>
+                                            <span class="sidebar-title">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="profil">
+                                            <span class="glyphicons glyphicons-cup"></span>
+                                            <span class="sidebar-title">Profile Sekolah</span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar-label pt15">Data Siswa</li>
+                                    <li>
+                                        <a href="lkp_form">
+                                            <span class="glyphicons glyphicons-book"></span> 
+                                            <span class="sidebar-title">Lengkapi Biodata</span>
+                                        </a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="prt_form">
+                                            <span class="glyphicons glyphicons-print"></span> 
+                                            <span class="sidebar-title">Cetak Formulir</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="sidebar-toggle-mini">
+                                    <a href="#">
+                                        <span class="fa fa-sign-out"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </aside>
+                        <!-- End: Sidebar -->
+
                         <!-- Start: Content -->
                         <section id="content_wrapper">
                             <!-- Start: Topbar -->
