@@ -58,7 +58,7 @@ error_reporting("null");
             <div class="tz-slider-banner">
                 <div class="tz-items">
                     <div class="tz-slider-images">
-                        <img src="demos/Banner/banner-03.jpg" alt="Images">
+                        <img src="img/sekolah.jpeg" alt="Images">
                     </div>
                     <div class="tz-banner-content">
                         <div class="container">
@@ -139,12 +139,12 @@ error_reporting("null");
                                         $jum = $hs_id_reg + 1;
                                         $haskode = 0;
                                         if ($jum >= "001" && $jum <= "009") {
-                                            $haskode = "PPDB21-00$jum";
+                                            $haskode = "PPDB23-00$jum";
                                         } elseif ($jum >= "010" && $jum <= "099") {
                                             $jum = $hs_id_reg + 1;
-                                            $haskode = "PPDB21-0$jum";
+                                            $haskode = "PPDB23-0$jum";
                                         } else {
-                                            $haskode = "PPDB21-$jum";
+                                            $haskode = "PPDB23-$jum";
                                         }
 
                                         if (!empty($email)) {
