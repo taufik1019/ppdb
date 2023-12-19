@@ -3,6 +3,7 @@ session_start();
 if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi_ps']))
     {
         include ("../con_db/connection.php");
+        // error_reporting("null");
         $status=$_SESSION['fi_st'];
         if($status=="Siswa")
             {
@@ -13,10 +14,10 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                 <head>
                     <!-- Meta, title, CSS, favicons, etc. -->
                    <meta charset="utf-8">
-                    <title>Cetak Formulir Data Siswa</title>
-                    <meta name="keywords" content="Cetak Formulir Data Siswa" />
-                    <meta name="description" content="Cetak Formulir Data Siswa">
-                    <meta name="author" content="Cetak Formulir Data Siswa">
+                    <title>Formulir Kelengkapan Data Siswa</title>
+                    <meta name="keywords" content="Formulir Kelengkapan Data Siswa" />
+                    <meta name="description" content="Formulir Kelengkapan Data Siswa">
+                    <meta name="author" content="Formulir Kelengkapan Data Siswa">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
                     <!-- Required Plugin CSS -->
@@ -35,6 +36,11 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                     <!-- Favicon -->
                     <link rel="shortcut icon" href="assets/img/favicon.ico">
 
+                    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+                    <!--[if lt IE 9]>
+                    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+                    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+                    <![endif]-->
                 </head>
 
                 <body class="form-input-page">
@@ -81,18 +87,63 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                         </a>
                                     </li>
                                     <li class="sidebar-label pt15">Data Siswa</li>
-                                    <li>
+                                    <li class="active">
                                         <a href="lkp_form">
                                             <span class="glyphicons glyphicons-book"></span> 
                                             <span class="sidebar-title">Lengkapi Biodata</span>
                                         </a>
                                     </li>
-                                    <li class="active">
+                                    <li>
                                         <a href="prt_form">
                                             <span class="glyphicons glyphicons-print"></span> 
                                             <span class="sidebar-title">Cetak Formulir</span>
                                         </a>
                                     </li>
+
+                                   <!--  <li class="sidebar-label pt15">Rincian Biaya</li>
+                                    <li>
+                                        <a href="rc_by">
+                                            <span class="glyphicons glyphicons-list"></span>
+                                            <span class="sidebar-title">Rincian Biaya Masuk Sekolah</span>
+                                        </a>
+                                    </li> -->
+
+                                    <!-- <li class="sidebar-label pt15">Data Pembayaran</li>
+                                    <li>
+                                        <a href="lkp_form_byr">
+                                            <span class="glyphicons glyphicons-book"></span> 
+                                            <span class="sidebar-title">Formulir Pembayaran</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="prt_form_byr">
+                                            <span class="glyphicons glyphicons-print"></span> 
+                                            <span class="sidebar-title">Cetak Pembayaran</span>
+                                        </a>
+                                    </li> -->
+
+
+                                    <!-- <li class="sidebar-label pt15">Informasi Status</li>
+                                    <li>
+                                        <a href="sts_reg">
+                                            <span class="glyphicons glyphicons-warning_sign"></span> 
+                                            <span class="sidebar-title">Status Pendaftaran</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="sts_byr">
+                                            <span class="glyphicons glyphicons-warning_sign"></span> 
+                                            <span class="sidebar-title">Status Pembayaran</span>
+                                        </a>
+                                    </li>
+
+                                    <hr />
+                                    <li>
+                                        <a href="logout">
+                                            <span class="glyphicons glyphicons-pen"></span>
+                                            <span class="sidebar-title">Logout</span>
+                                        </a>
+                                    </li> -->
                                 </ul>
                                 <div class="sidebar-toggle-mini">
                                     <a href="#">
@@ -110,17 +161,155 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                 <div class="topbar-left">
                                     <ol class="breadcrumb">
                                         <li class="crumb-active">
-                                            <a href="lkp_form">Cetak Formulir Data Siswa</a>
+                                            <a href="lkp_form">Formulir Lengkapi Biodata</a>
                                         </li>
                                     </ol>
                                 </div>
                                 
                             </header>
                             <!-- End: Topbar -->
-                            
+
                             <?php
-                           
-                                     include("form_prt_sis.php");
+                            if(isset($_POST['tb_update']))
+                                {
+                                    $namasiswa=str_replace("'", "`", $_POST['namasiswa']); 
+                                    $nisn=str_replace("'", "`", $_POST['nisn']);
+                                    $tempatlahir=str_replace("'", "`", $_POST['tempatlahir']);
+                                    $tgllahir=date("Y-m-d",strtotime($_POST['tgllahir']));
+                                    
+
+                                    if(isset($_POST['jk']))
+                                    {
+                                        $jk=$_POST['jk'];
+                                    }
+                                    else
+                                    {
+                                        $jk="-";
+                                    }
+                                    $agama=$_POST['agama'];
+                                    $anakke=$_POST['anakke'];
+                                    $dari=$_POST['dari'];
+                                    $statusdalamkeluarga=$_POST['statusdalamkeluarga'];
+                                    $alamatsiswa=str_replace("'", "`", nl2br($_POST['alamatsiswa']));
+                                    $telepon=str_replace("'", "`",$_POST['telepon']);
+                                    
+                                    $sekolahasal=str_replace("'", "`", $_POST['sekolahasal']);
+                                    $namasekolah="-";
+                                    $alamatsekolah=str_replace("'", "`", nl2br($_POST['alamatsekolah']));
+                                    $thnsttb=str_replace("'", "`", $_POST['thnsttb']);
+                                    $nosttb=str_replace("'", "`", $_POST['nosttb']);
+                                    
+                                    $namaayah=str_replace("'", "`", $_POST['namaayah']);
+                                    $namaibu=str_replace("'", "`", $_POST['namaibu']);
+                                    $alamatorangtua=str_replace("'", "`", nl2br($_POST['alamatorangtua']));
+                                    $teleponortu=str_replace("'", "`",$_POST['teleponortu']);
+                                    $kerjaayah=$_POST['kerjaayah'];
+                                    $kerjaibu=$_POST['kerjaibu'];
+                                    $namawali=str_replace("'", "`", $_POST['namawali']);
+                                    $alamatwali=str_replace("'", "`", nl2br($_POST['alamatwali']));
+                                    $telepowali=str_replace("'", "`",$_POST['telepowali']);
+                                    $kerjawali=$_POST['kerjawali'];
+                                    // additional begin
+                                    $mtk=$_POST['nilai_bind'];
+                                    $bind=$_POST['nilai_matematika'];
+                                    $ipa=$_POST['nilai_ipa'];
+                                    $asal_ortu=$_POST['asal_ortu'];
+                                    $asal_lain=$_POST['asal_lain'];
+                                    $domisili_ortu = $_POST['domisili_ortu'];
+                                    $domisili_siswa = $_POST['domisili_siswa'];
+                                    $goldar = $_POST['goldar'];
+                                    // additional end
+
+                                    $pasfoto=str_replace("'", "`", $_FILES['pasfoto']);
+                                        $pasfotonm=str_replace("'", "`", $_FILES['pasfoto']['name']);
+                                        $pasfototy=str_replace("'", "`", $_FILES['pasfoto']['type']);
+                                        $pasfotosz=str_replace("'", "`", $_FILES['pasfoto']['size']);
+                                    $fotoskhu=str_replace("'", "`", $_FILES['fotoskhu']);
+                                        $fotoskhunm=str_replace("'", "`", $_FILES['fotoskhu']['name']);
+                                        $fotoskhuty=str_replace("'", "`", $_FILES['fotoskhu']['type']);
+                                        $fotoskhusz=str_replace("'", "`", $_FILES['fotoskhu']['size']);                                      
+                                    $jumlahnilai=str_replace("'", "`", $_POST['jumlahnilai']);
+                                    $email=str_replace("'", "`", $_POST['email']);
+
+                                    $pil_kelas=$_POST['pil_kelas'];
+
+                                    if(empty($namasiswa) || empty($tempatlahir) || empty($tgllahir) || $jk=="-" || $agama=="-" || empty($anakke)|| empty($dari) || $statusdalamkeluarga=="-" || empty($alamatsiswa) || empty($sekolahasal) || empty($namasekolah) || empty($alamatsekolah) || empty($namaayah) || empty($namaibu) || empty($alamatorangtua) || empty($teleponortu) || $kerjaayah=="-" || $kerjaibu=="-" || $pil_kelas=="-")
+                                        {
+                                            ?>
+                                            <div class="alert alert-danger alert-dismissable">
+                                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                            <i class="fa fa-remove pr10"></i>
+                                            <strong>Error</strong> Data Anda Gagal Disimpan
+                                            <a href="#" class="alert-link"> Wajib Isi Pada Form Yang Ada Simbol *</a> Silahkan Coba Kembali</div>
+                                            <?php
+                                            include("form_lkp_sis.php");
+                                        }
+                                    else
+                                        {
+                                            $tp_dt_ft=mysqli_fetch_row(mysqli_query($conn,"Select foto, foto_skhu from tb_siswa where id_siswa='$fi_id'"));
+                                            $ck=0;
+                                            if($pasfototy=="image/jpeg" || $pasfototy=="image/jpg" || $pasfototy=="image/png")
+                                            {
+                                                $ck=1;
+                                                $fn_pasfoto=$pasfotonm;
+                                            }
+                                            else
+                                            {
+                                                $ck=2;
+                                                $fn_pasfoto=$tp_dt_ft[0];
+                                            }
+
+
+                                            $cb=0;
+                                            if($fotoskhuty=="image/jpeg" || $fotoskhuty=="image/jpg" || $fotoskhuty=="image/png")
+                                            {
+                                                $cb=1;
+                                                $fn_skhu=$fotoskhunm;
+                                            }
+                                            else
+                                            {
+                                                $cb=2;
+                                                 $fn_skhu=$tp_dt_ft[1];
+                                            }
+
+                                            // if($p_s=="ok")
+                                            $date_update=date("Y-m-d H:i:s");
+                                            // additional begin
+                                            $query = "update tb_siswa set nama_siswa='$namasiswa', nisn='$nisn', tempat_lahir='$tempatlahir', tgl_lahir='$tgllahir', jenis_kelamin='$jk', agama='$agama', anak_ke='$anakke', dari='$dari', status_dalam_keluarga='$statusdalamkeluarga', alamat_siswa='$alamatsiswa', telepon='$telepon', sekolah_asal='$sekolahasal', nama_sekolah='$namasekolah', alamat='$alamatsekolah', sttb_tahun='$thnsttb', sttb_nomor='$nosttb', bind='$bind', mtk='$mtk', ipa='$ipa', nama_ayah='$namaayah', nama_ibu='$namaibu', asal_ortu='$asal_ortu', asal_lain='$asal_lain', alamat_ortu='$alamatorangtua', telepon_ortu='$teleponortu', kerja_ayah='$kerjaayah', kerja_ibu='$kerjaibu', nama_wali='$namawali', alamat_wali='$alamatwali', telepon_wali='$telepowali', pekerjaan_wali='$kerjawali', foto='$fn_pasfoto', foto_skhu='$fn_skhu', jumlah_nilai='$jumlahnilai', email_aktif='$email', kelas='$pil_kelas', tgl_update='$date_update', asal_ortu='$asal_ortu', asal_lain='$asal_lain', domisili_siswa='$domisili_siswa', domisili_ortu='$domisili_ortu', golongan_darah='$goldar' where id_siswa='$fi_id'";
+                                            $exec = mysqli_query($conn,$query);
+                                             // additional end
+                                            // var_dump($query);
+                                            // var_dump($exec);
+                                            // var_dump(mysql_error($conn));
+                                            // break;
+                                            if($ck==1)
+                                            {
+                                                 move_uploaded_file($pasfoto['tmp_name'], "foto_pp/".$fn_pasfoto);
+                                            }
+                                            
+                                            if($cb==1)
+                                            {
+                                                 move_uploaded_file($fotoskhu['tmp_name'], "foto_skhu/".$fn_skhu);
+                                            }
+                                           
+                                             ?>
+                                            <div class="alert alert-success alert-dismissable">
+                                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                            <i class="fa fa-check pr10"></i>
+                                            <strong>Sukses!</strong> Selamat Anda Berhasil
+                                            <a href="#" class="alert-link">Memperbarui Data Anda.</a>.</div>
+                                            <meta http-equiv="refresh" content="5;url=lkp_form">
+                                            <?php
+                                            include("form_lkp_sis.php");
+                                                       
+                                                
+                                        }
+
+                                }
+                            else
+                                {
+                                     include("form_lkp_sis.php");
+                                }
                             ?>
                         </section>
                         <!-- End: Content -->
@@ -146,6 +335,10 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/globalize/0.1.1/globalize.min.js"></script>
                     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.js"></script>
 
+                    <!-- via local files 
+                    <script type="text/javascript" src="vendor/plugins/globalize/src/core.js"></script>
+                    <script type="text/javascript" src="vendor/plugins/moment/moment.min.js"></script> -->
+
                     <!-- Page Plugins -->
                     <script type="text/javascript" src="vendor/plugins/daterange/daterangepicker.js"></script>
                     <script type="text/javascript" src="vendor/plugins/datepicker/js/bootstrap-datetimepicker.js"></script>
@@ -159,7 +352,28 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                     <script type="text/javascript" src="assets/js/demo.js"></script>
                     <script type="text/javascript">
                         jQuery(document).ready(function() {
-
+                            //additional begin
+                            if($('#asl_ortu').val() == 'Lainnya'){
+                                $('#asal_lain').show();
+                                $('#asal_lbl').show();    
+                            }else{
+                                $('#asal_lain').hide();
+                                $('#asal_lbl').hide();
+                                $('#asal_lain').val('');
+                            }
+                            
+                            $('#asl_ortu').on('change', function(){
+                                var pilihan = $(this).val();
+                                if(pilihan == 'Lainnya'){
+                                    $('#asal_lain').show();
+                                    $('#asal_lbl').show();
+                                }else{
+                                    $('#asal_lain').hide();
+                                    $('#asal_lbl').hide();
+                                    $('#asal_lain').val('');
+                                }
+                            });
+                            //additional end
                             "use strict";
 
                             // Init Theme Core    
@@ -186,7 +400,10 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                               $("#datepicker1").datepicker({
                                     prevText: '<i class="fa fa-chevron-left"></i>',
                                     nextText: '<i class="fa fa-chevron-right"></i>',
-                                    showButtonPanel: false
+                                    dateFormat: 'dd-M-yy',
+                                    showButtonPanel: false,
+                                    changeYear:true,
+                                    yearRange: "2005:2019"
                                 });
 
                             $('#daterangepicker1').daterangepicker();
