@@ -69,7 +69,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 
 					<li class="sidebar-label pt15">Data Pendaftar</li>
 				    <li>
-				        <a href="verifpendaftaran.php">
+				        <a href="verifpendaftaran">
 				            <span class="glyphicons glyphicons-edit"></span> 
 				            <span class="sidebar-title">Verifikasi Pendaftar</span>
 				        </a>
@@ -77,20 +77,20 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 
 					<li class="sidebar-label pt15">Data Pembayaran</li>
 				    <li>
-				        <a href="verpembayaran.php">
+				        <a href="lkp_form_byr">
 				            <span class="glyphicons glyphicons-edit"></span> 
 				            <span class="sidebar-title">Verifikasi Pembayaran</span>
 				        </a>
 				    </li>
 					<li class="sidebar-label pt15">Proses Informasi</li>
 				    <li>
-				        <a href="in_info.php">
+				        <a href="in_info">
 				            <span class="glyphicons glyphicons-notes"></span> 
 				            <span class="sidebar-title">Input Informasi</span>
 				        </a>
 				    </li>
 					<li>
-				        <a href="up_info.php">
+				        <a href="up_info">
 				            <span class="glyphicons glyphicons-list"></span> 
 				            <span class="sidebar-title">List Informasi</span>
 				        </a>
@@ -104,7 +104,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 				        </a>
 				    </li>
                     <li>
-                        <a href="logout.php">
+                        <a href="logout">
                             <span class="glyphicons glyphicons-pen"></span>
                             <span class="sidebar-title">Logout</span>
                         </a>
@@ -180,7 +180,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 					                </div>
 					            </div>
 					        </div>
-					        <div class="col-md-3">
+					        <!-- <div class="col-md-3">
 					            <div class="panel bg-warning light of-h mb10">
 					                <div class="pn pl20 p5">
 					                    <div class="icon-bg"> <i class="fa fa-envelope"></i> </div>
@@ -188,7 +188,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 					                    <h5 class="text-muted">Pesan Baru</h5>
 					                </div>
 					            </div>
-					        </div>
+					        </div> -->
 					    </div>
 				        <!-- end: .row -->
 
@@ -382,7 +382,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 				                            </div> -->
 
 											<!-- Flag/Icon Column -->
-												<div class="col-md-6 br-r">
+												<!-- <div class="col-md-6 br-r">
 				                                    <h5 class="mt5 mbn ph10 pb5 br-b fw700">Pesan Baru<small class="pull-right fw700 text-primary">Lihat</small> </h5>
 				                                    <table class="table mbn tc-med-1 tc-bold-last tc-fs13-last">
 				                                        <thead>
@@ -395,7 +395,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 				                                        	
 														</tbody>
 				                                    </table>
-				                                </div>
+				                                </div> -->
    
 				                            </div>
 				                        </div>

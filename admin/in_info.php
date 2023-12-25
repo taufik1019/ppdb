@@ -84,7 +84,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 
                                     <li class="sidebar-label pt15">Data Pendaftar</li>
                                     <li>
-                                        <a href="verifpendaftaran.php">
+                                        <a href="verifpendaftaran">
                                             <span class="glyphicons glyphicons-edit"></span> 
                                             <span class="sidebar-title">Verifikasi Pendaftar</span>
                                         </a>
@@ -92,20 +92,20 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 
                                     <li class="sidebar-label pt15">Data Pembayaran</li>
                                     <li>
-                                        <a href="verpembayaran.php">
+                                        <a href="lkp_form_byr">
                                             <span class="glyphicons glyphicons-edit"></span> 
                                             <span class="sidebar-title">Verifikasi Pembayaran</span>
                                         </a>
                                     </li>
                                     <li class="sidebar-label pt15">Proses Informasi</li>
                                     <li>
-                                        <a href="in_info.php">
+                                        <a href="in_info">
                                             <span class="glyphicons glyphicons-notes"></span> 
                                             <span class="sidebar-title">Input Informasi</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="up_info.php">
+                                        <a href="up_info">
                                             <span class="glyphicons glyphicons-list"></span> 
                                             <span class="sidebar-title">List Informasi</span>
                                         </a>
@@ -119,7 +119,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="logout.php">
+                                        <a href="logout">
                                             <span class="glyphicons glyphicons-pen"></span>
                                             <span class="sidebar-title">Logout</span>
                                         </a>

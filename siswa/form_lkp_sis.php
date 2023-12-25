@@ -126,7 +126,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                                 <select name="agama" class="form-control">
                                                     <option value="-">-PILIH AGAMA-</option>
                                                     <?php
-                                                    $ar_agama=array("Islam");
+                                                    $ar_agama=array("Islam","Kristen","Konghucu","Budha");
                                                     for($i=0;$i<=0;$i++)
                                                     {
                                                         if($ar_agama[$i]==$tp_dt_sis[6])
@@ -252,7 +252,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                        <div class="form-group">
                                             <label for="inputStandard" class="col-lg-3 control-label">Asal SMP *</label>
                                             <div class="col-lg-8">
-                                                <input type="text" id="inputStandard" class="form-control" name="sekolahasal" value="<?php echo"$tp_dt_sis[12]";?>" placeholder="Asal SD Siswa">
+                                                <input type="text" id="inputStandard" class="form-control" name="sekolahasal" value="<?php echo"$tp_dt_sis[12]";?>" placeholder="Asal SMP Siswa">
                                             </div>
                                         </div>
                                         <!-- <div class="form-group">
@@ -264,7 +264,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                         <div class="form-group">
                                             <label class="col-lg-3 control-label" for="textArea3">Alamat Sekolah *</label>
                                             <div class="col-lg-8">
-                                                <textarea class="form-control" name="alamatsekolah" id="textArea3" rows="3" placeholder="Alamat Sekolah SD Siswa"><?php $enc_alt2=filter_var($tp_dt_sis[14],FILTER_SANITIZE_STRING); echo"$enc_alt2";?></textarea>
+                                                <textarea class="form-control" name="alamatsekolah" id="textArea3" rows="3" placeholder="Alamat Sekolah SMP Siswa"><?php $enc_alt2=filter_var($tp_dt_sis[14],FILTER_SANITIZE_STRING); echo"$enc_alt2";?></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -291,7 +291,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                         </div>
                                         <!-- additional begin -->
                                         <div class="panel-heading">
-                                            <span class="panel-title">RINCIAN NILAI AKHIR UJIAN SEKOLAH DAERAH (USD)</span>
+                                            <span class="panel-title">RINCIAN NILAI AKHIR UJIAN SEKOLAH DAERAH</span>
                                         </div>
                                         <div class="form-group">
                                             <label for="disabledInput" class="col-lg-3 control-label">Bahasa Indonesia </label>
