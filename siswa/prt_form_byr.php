@@ -74,26 +74,26 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                 <!-- sidebar menu -->
                                 <ul class="nav sidebar-menu">
                                     <li>
-                                        <a href="index">
+                                        <a href="index.php">
                                             <span class="glyphicons glyphicons-home"></span>
                                             <span class="sidebar-title">Dashboard</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="profil">
+                                        <a href="profil.php">
                                             <span class="glyphicons glyphicons-cup"></span>
                                             <span class="sidebar-title">Profile Sekolah</span>
                                         </a>
                                     </li>
                                     <li class="sidebar-label pt15">Data Siswa</li>
                                     <li>
-                                        <a href="lkp_form">
+                                        <a href="lkp_form.php">
                                             <span class="glyphicons glyphicons-book"></span> 
                                             <span class="sidebar-title">Lengkapi Biodata</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="prt_form">
+                                        <a href="prt_form.php">
                                             <span class="glyphicons glyphicons-print"></span> 
                                             <span class="sidebar-title">Cetak Formulir</span>
                                         </a>
@@ -101,13 +101,13 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 
                                     <li class="sidebar-label pt15">Data Pembayaran</li>
                                     <li>
-                                        <a href="lkp_form_byr">
+                                        <a href="lkp_form_byr.php">
                                             <span class="glyphicons glyphicons-book"></span> 
                                             <span class="sidebar-title">Formulir Pembayaran</span>
                                         </a>
                                     </li>
                                     <li class="active">
-                                        <a href="prt_form_byr">
+                                        <a href="prt_form_byr.php">
                                             <span class="glyphicons glyphicons-print"></span> 
                                             <span class="sidebar-title">Cetak Pembayaran</span>
                                         </a>
@@ -116,13 +116,13 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 
                                     <li class="sidebar-label pt15">Informasi Status</li>
                                     <li>
-                                        <a href="sts_reg">
+                                        <a href="sts_reg.php">
                                             <span class="glyphicons glyphicons-warning_sign"></span> 
                                             <span class="sidebar-title">Status Pendaftaran</span>
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="sts_byr">
+                                        <a href="sts_by.phpr">
                                             <span class="glyphicons glyphicons-warning_sign"></span> 
                                             <span class="sidebar-title">Status Pembayaran</span>
                                         </a>
@@ -130,7 +130,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 
                                     <hr />
                                     <li>
-                                        <a href="logout">
+                                        <a href="logout.php">
                                             <span class="glyphicons glyphicons-pen"></span>
                                             <span class="sidebar-title">Logout</span>
                                         </a>

@@ -20,7 +20,11 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                         <td style='width:40%' style='text-align:center'>
                             <div align='center'>
                                 <font style='text-align:center;font-size:25vw'><strong>RINCIAN BIAYA PENDIDIKAN</strong></font><br/>
+<<<<<<< HEAD
                                 <font style='text-align:center;font-size:20vw'><strong>SMP MUHAMMADIYAH 4 YOGYAKARTA</strong></font><br/>
+=======
+                                <font style='text-align:center;font-size:20vw'><strong>SMA NEGERI 7 YOGYAKARTA</strong></font><br/>
+>>>>>>> b314a52b06e472b896a4a1da5bc462b727f57664
                                 <font style='text-align:center;font-size:17vw'><strong>TAHUN PELAJARAN 2021/2022</strong></font><br/>
                             </div>
                         </td>
@@ -46,7 +50,11 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                             <td style='vertical-align:top'>$tp_dt_sis[31]</td>
                         </tr> 
                         <tr>
+<<<<<<< HEAD
                             <td style='vertical-align:top'><strong>Asal SD</strong></td>
+=======
+                            <td style='vertical-align:top'><strong>Asal SMP</strong></td>
+>>>>>>> b314a52b06e472b896a4a1da5bc462b727f57664
                             <td style='vertical-align:top'><strong>:</strong></td>
                             <td style='vertical-align:top'>$tp_dt_sis[12]</td>
                         </tr>
@@ -128,7 +136,11 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                             <td style='vertical-align:top'><strong>$tp_dana[9]</strong></td>
                         </tr>
                         <tr>
+<<<<<<< HEAD
                             <td style='vertical-align:top' colspan='3'>Jika anak saya mengundurkan diri dari SMP Muhammadiyah 4 Yogyakarta atau diterima di
+=======
+                            <td style='vertical-align:top' colspan='3'>Jika anak saya mengundurkan diri dari SMA Negeri 7 Yogyakarta atau diterima di
+>>>>>>> b314a52b06e472b896a4a1da5bc462b727f57664
 sekolah lain, maka saya akan :</td>
                         </tr>
                         <tr>
