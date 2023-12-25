@@ -382,20 +382,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 				                            </div> -->
 
 											<!-- Flag/Icon Column -->
-												<!-- <div class="col-md-6 br-r">
-				                                    <h5 class="mt5 mbn ph10 pb5 br-b fw700">Pesan Baru<small class="pull-right fw700 text-primary">Lihat</small> </h5>
-				                                    <table class="table mbn tc-med-1 tc-bold-last tc-fs13-last">
-				                                        <thead>
-				                                            <tr class="hidden">
-				                                                <th>Nama</th>
-				                                                <th>Tanggal</th>
-				                                            </tr>
-				                                        </thead>
-				                                        <tbody>
-				                                        	
-														</tbody>
-				                                    </table>
-				                                </div> -->
+											
    
 				                            </div>
 				                        </div>
