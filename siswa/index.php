@@ -98,50 +98,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 				                            <span class="sidebar-title">Cetak Formulir</span>
 				                        </a>
 				                    </li>
-				                    <!-- <li class="sidebar-label pt15">Rincian Biaya</li>
-				                    <li>
-                                        <a href="rc_by">
-                                            <span class="glyphicons glyphicons-list"></span>
-                                            <span class="sidebar-title">Rincian Biaya Masuk Sekolah</span>
-                                        </a>
-                                    </li> -->
-
-				                    <!-- <li class="sidebar-label pt15">Data Pembayaran</li>
-				                    <li>
-				                        <a href="lkp_form_byr">
-				                            <span class="glyphicons glyphicons-book"></span> 
-				                            <span class="sidebar-title">Formulir Pembayaran</span>
-				                        </a>
-				                    </li>
-				                    <li>
-				                        <a href="prt_form_byr">
-				                            <span class="glyphicons glyphicons-print"></span> 
-				                            <span class="sidebar-title">Cetak Pembayaran</span>
-				                        </a>
-				                    </li> -->
-
-
-				                    <!-- <li class="sidebar-label pt15">Informasi Status</li>
-				                    <li>
-				                        <a href="sts_reg">
-				                            <span class="glyphicons glyphicons-warning_sign"></span> 
-				                            <span class="sidebar-title">Status Pendaftaran</span>
-				                        </a>
-				                    </li>
-				                    <li>
-				                        <a href="sts_byr">
-				                            <span class="glyphicons glyphicons-warning_sign"></span> 
-				                            <span class="sidebar-title">Status Pembayaran</span>
-				                        </a>
-				                    </li>
-
-				                    <hr />
-                                    <li>
-                                        <a href="logout">
-                                            <span class="glyphicons glyphicons-pen"></span>
-                                            <span class="sidebar-title">Logout</span>
-                                        </a>
-                                    </li> -->
+				                   
 				                </ul>
 				                <div class="sidebar-toggle-mini">
 				                    <a href="#">
@@ -180,7 +137,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 								                    	$reg_trm=mysqli_num_rows(mysqli_query($conn,"Select * from tb_siswa where status_pembayaran='Diterima'"));
 								                    	$reg_cdg=mysqli_num_rows(mysqli_query($conn,"Select * from tb_siswa where status_pembayaran='Cadangan'"));
 								                    	$reg_blm=mysqli_num_rows(mysqli_query($conn,"Select * from tb_siswa where status_pembayaran='Belum' and status='Terdaftar'"));
-								                    	$msg_new=mysqli_num_rows(mysqli_query($conn,"Select * from tb_pesan where status='Baru'"));
+								                   
 
 								                    ?>
                 				                    <div class="row">
