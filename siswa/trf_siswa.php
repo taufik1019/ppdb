@@ -16,12 +16,12 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                 $header="
                 <table style='width:100%'>
                     <tr>
-                        <td style='width:13%' style='text-align:center'><img src='../logo/logo.png' style='width:13%'></td>
+                        <td style='width:13%' style='text-align:center'><img src='../img/logo.jpeg' style='width:13%'></td>
                         <td style='width:40%' style='text-align:center'>
                             <div align='center'>
                                 <font style='text-align:center;font-size:25vw'><strong>RINCIAN BIAYA PENDIDIKAN</strong></font><br/>
                                 <font style='text-align:center;font-size:20vw'><strong>SMA NEGERI 7 YOGYAKARTA</strong></font><br/>
-                                <font style='text-align:center;font-size:17vw'><strong>TAHUN PELAJARAN 2021/2022</strong></font><br/>
+                                <font style='text-align:center;font-size:17vw'><strong>TAHUN PELAJARAN 2023/2024</strong></font><br/>
                             </div>
                         </td>
                     </tr>

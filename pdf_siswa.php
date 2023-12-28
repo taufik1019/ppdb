@@ -15,7 +15,7 @@ if(isset($_SESSION['id_s']))
 
                 <table style='width:100%'>
                     <tr>
-                        <td style='width:13%' style='text-align:center'><img src='logo/logo.png' style='width:13%'></td>
+                        <td style='width:13%' style='text-align:center'><img src='img/logo.jpeg' style='width:13%'></td>
                         <td style='width:40%' style='text-align:center'>
                             <div align='center'>
                             <font style='text-align:center;font-size:25vw'><strong>FORMULIR PENDAFTARAN</font><br/>

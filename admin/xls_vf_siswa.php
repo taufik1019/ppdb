@@ -61,7 +61,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                     <div style="border:1px solid white;width:100%;height:100%;overflow-y:hidden;overflow-x:scroll;">
                         <div align="center">
                             <h1>PPDB ONLINE</h1>
-                            <h3>SMP MUHAMMADIYAH 4 YOGYAKARTA</h3>
+                            <h3>SMA Negeri 7 YOGYAKARTA</h3>
                             <h4>Status: <?php echo"$st_s";?></h4>
                             <h4>Periode: <?php echo"$prd";?></h4>
                         </div>

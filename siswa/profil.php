@@ -91,50 +91,6 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
                                         </a>
                                     </li>
 
-                                   <!--  <li class="sidebar-label pt15">Rincian Biaya</li>
-                                    <li>
-                                        <a href="rc_by">
-                                            <span class="glyphicons glyphicons-list"></span>
-                                            <span class="sidebar-title">Rincian Biaya Masuk Sekolah</span>
-                                        </a>
-                                    </li> -->
-
-                                    <!-- <li class="sidebar-label pt15">Data Pembayaran</li>
-                                    <li>
-                                        <a href="lkp_form_byr">
-                                            <span class="glyphicons glyphicons-book"></span> 
-                                            <span class="sidebar-title">Formulir Pembayaran</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="prt_form_byr">
-                                            <span class="glyphicons glyphicons-print"></span> 
-                                            <span class="sidebar-title">Cetak Pembayaran</span>
-                                        </a>
-                                    </li> -->
-
-
-                                    <!-- <li class="sidebar-label pt15">Informasi Status</li>
-                                    <li>
-                                        <a href="sts_reg">
-                                            <span class="glyphicons glyphicons-warning_sign"></span> 
-                                            <span class="sidebar-title">Status Pendaftaran</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="sts_byr">
-                                            <span class="glyphicons glyphicons-warning_sign"></span> 
-                                            <span class="sidebar-title">Status Pembayaran</span>
-                                        </a>
-                                    </li>
-
-                                    <hr />
-                                    <li>
-                                        <a href="logout">
-                                            <span class="glyphicons glyphicons-pen"></span>
-                                            <span class="sidebar-title">Logout</span>
-                                        </a>
-                                    </li> -->
                                 </ul>
                                 <div class="sidebar-toggle-mini">
                                     <a href="#">
@@ -174,7 +130,7 @@ if(isset($_SESSION['fi_id']) && isset($_SESSION['fi_us']) && isset($_SESSION['fi
 
                                             <div class="panel-body pn">
                                                 <div class="p25 br-b">
-                                                    <img src="../demos/Banner/banner-03.jpg" style="width: 100%" alt="Images">
+                                                    <img src="../img/sekolah.jpeg" style="width: 100%" alt="Images">
                                                     <div class="input-group input-group-merge input-hero mb30" style="text-align: justify;">
                                                         <h1><b>SMA N 7 Yogyakarta</b></h1>
                                                         Merupakan salah satu sekolah yang terletak di kawasan jantung kota Yogyakarta, tentu saja sekolah ini tidak akan kalah dengan sekolah-sekolah lainnya yang mempunyai akreditasi lebih baik, hal ini bisa saja kita lihat dari bagaimana prestasi yang pernah dicapai oleh masing-masing sekolah, bisa saja sekolah yang mempunyai akreditas dibawah A bisa mencapai prestasi yang lebih banyak dibandingkan dengan yang pernah dicapai oleh sekolah yang mempunyai akreditasi yang lebih bagus, sehingga bagi adik-adik yang ingin masuk dalam sekolah ini harus mempunyai kepercayaan dan keyakinan bahwa sekolah ini mampu untuk mendatangkan prestasi yang ada untuk sekolah mereka masing-masing, dimana tentu saja juga harus menyesuaikan kemampuan dari peserta didik masing-masing.<br />

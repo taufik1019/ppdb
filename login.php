@@ -148,11 +148,17 @@ include("con_db/connection.php");
                                     $_SESSION['fi_ps'] = $fi_ps;
                                     $_SESSION['fi_st'] = $fi_st;
 
-                                ?>
+                                    ?>
                                     <script type="text/javascript">
                                         window.location = "admin/index.php";
                                     </script>
                                 <?php
+                                } else {
+                                ?>
+                                    <div class="tz-portfolio-project">
+                                        <a href="#">Error !! Anda Gagal Login Username dan Password Yang Anda Inputkan Tidak Terdaftar.</a>
+                                    </div>
+                            <?php
                                 
                                 }
                             }
