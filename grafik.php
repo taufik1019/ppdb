@@ -39,12 +39,14 @@ include("con_db/connection.php");
             <div class="container">
                 <div class="tz-header-content">
                     <h3 class="tz-logo pull-left">
-                        <a href="#"><img alt="Images Logo" src=""></a>
+                        <a href="#"><img alt="Images Logo" src="img/logosma.png"></a>
                     </h3>
                     <button type="button" class="tz-button-toggle btn-navbar pull-right" data-target=".nav-collapse">
                         <i class="fa fa-bars"></i>
                     </button>
-                
+                    <?php
+                    include("top_menu.php");
+                    ?>
                 </div>
             </div><!-- End Content Main Header -->
         </div>
@@ -76,7 +78,9 @@ include("con_db/connection.php");
     <!-- Begin section tz-introduce-univesity -->
     <section class="tz-introduce-univesity">
         <!-- Start class tzWrap -->
-       
+        <?php
+        include("btn_4.php");
+        ?>
         <div class="tzWrap">
 
             <div class="container" id="fc">

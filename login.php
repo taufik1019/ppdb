@@ -29,7 +29,7 @@ include("con_db/connection.php");
             <div class="container">
                 <div class="tz-header-content">
                     <h3 class="tz-logo pull-left">
-                        <a href="#"><img alt="Images Logo" src="demos/logo-header-2.png"></a>
+                        <a href="#"><img alt="Images Logo" src="img/logosma.png"></a>
                     </h3>
                     <button type="button" class="tz-button-toggle btn-navbar pull-right" data-target=".nav-collapse">
                         <i class="fa fa-bars"></i>
